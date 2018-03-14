@@ -28,7 +28,7 @@ public class NQueen {
 	
 	boolean checksafety(int[][] board, int column, int row) {
 		int upperRow=row, lowerRow=row, upperColumn=column, lowerColumn=column;
-		
+		//learn backtrack method from https://www.geeksforgeeks.org/backtracking-set-3-n-queen-problem/
 		for(int i=column; i>=0; i--) {
 			if(board[row][i]==1)
 				return false;
